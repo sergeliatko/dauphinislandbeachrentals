@@ -38,13 +38,13 @@ require_once get_stylesheet_directory() . '/lib/customize.php';
 require_once get_stylesheet_directory() . '/lib/output.php';
 
 // Adds WooCommerce support.
-require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-setup.php';
+//require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-setup.php';
 
 // Adds the required WooCommerce styles and Customizer CSS.
-require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-output.php';
+//require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-output.php';
 
 // Adds the Genesis Connect WooCommerce notice.
-require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-notice.php';
+//require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-notice.php';
 
 add_action( 'after_setup_theme', 'genesis_child_gutenberg_support' );
 /**
@@ -154,12 +154,12 @@ add_filter( 'wp_nav_menu_args', 'genesis_sample_secondary_menu_args' );
 /**
  * Reduces secondary navigation menu to one level depth.
  *
- * @since 2.2.3
- *
  * @param array $args Original menu options.
+ *
  * @return array Menu options with depth set to 1.
+ * @since 2.2.3
  */
-function genesis_sample_secondary_menu_args( $args ) {
+function genesis_sample_secondary_menu_args( array $args ): array {
 
 	if ( 'secondary' === $args['theme_location'] ) {
 		$args['depth'] = 1;
@@ -173,14 +173,17 @@ add_filter( 'genesis_author_box_gravatar_size', 'genesis_sample_author_box_grava
 /**
  * Modifies size of the Gravatar in the author box.
  *
+ * @param int $size Original icon size.
+ *
+ * @return int Modified icon size.
  * @since 2.2.3
  *
- * @param int $size Original icon size.
- * @return int Modified icon size.
+ * @noinspection PhpUnusedParameterInspection
  */
-function genesis_sample_author_box_gravatar( $size ) {
+function genesis_sample_author_box_gravatar( int $size ): int {
+	$size = 90;
 
-	return 90;
+	return $size;
 
 }
 
@@ -188,14 +191,16 @@ add_filter( 'genesis_comment_list_args', 'genesis_sample_comments_gravatar' );
 /**
  * Modifies size of the Gravatar in the entry comments.
  *
+ * @param array $args Gravatar settings.
+ *
+ * @return array Gravatar settings with modified size.
  * @since 2.2.3
  *
- * @param array $args Gravatar settings.
- * @return array Gravatar settings with modified size.
  */
-function genesis_sample_comments_gravatar( $args ) {
+function genesis_sample_comments_gravatar( array $args ): array {
 
 	$args['avatar_size'] = 60;
+
 	return $args;
 
 }
