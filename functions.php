@@ -176,7 +176,7 @@ add_filter( 'genesis_author_box_gravatar_size', 'genesis_sample_author_box_grava
  * @param int $size Original icon size.
  *
  * @return int Modified icon size.
- * @since 2.2.3
+ * @since        2.2.3
  *
  * @noinspection PhpUnusedParameterInspection
  */
