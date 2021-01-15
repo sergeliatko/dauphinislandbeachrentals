@@ -10,6 +10,9 @@
  * @link    https://www.studiopress.com/
  */
 
+//load TechSpokes Genesis Tools
+require_once( dirname( __FILE__ ) . '/genesis-tools/autoload.php' );
+
 // Starts the engine.
 require_once get_template_directory() . '/lib/init.php';
 
