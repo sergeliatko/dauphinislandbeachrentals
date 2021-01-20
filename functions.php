@@ -13,7 +13,18 @@
 //load TechSpokes Genesis Tools
 require_once( dirname( __FILE__ ) . '/genesis-tools/autoload.php' );
 
-// Starts the engine.
+//Some modifications are needed before Genesis engine is started
+
+/**
+ * Add structural wrap around top menu.
+ */
+add_filter( 'genesis_theme_support_structural_wraps', function ( array $structural_wraps ) {
+	array_push( $structural_wraps, 'menu-top' );
+
+	return $structural_wraps;
+}, 10, 1 );
+
+// Now starts the engine.
 require_once get_template_directory() . '/lib/init.php';
 
 // Sets up the Theme.
@@ -131,8 +142,8 @@ function genesis_sample_post_type_support() {
 }
 
 // Adds image sizes.
-add_image_size( 'sidebar-featured', 75, 75, true );
-add_image_size( 'genesis-singular-images', 702, 526, true );
+add_image_size( 'sidebar-featured', 100, 56, true );
+add_image_size( 'genesis-singular-images', 640, 360, true );
 
 // Removes header right widget area.
 unregister_sidebar( 'header-right' );
@@ -145,13 +156,16 @@ genesis_unregister_layout( 'content-sidebar-sidebar' );
 genesis_unregister_layout( 'sidebar-content-sidebar' );
 genesis_unregister_layout( 'sidebar-sidebar-content' );
 
+// Add top menu
+add_action( 'genesis_before_header', 'genesis_sample_do_top_nav', 10, 0 );
+
 // Repositions primary navigation menu.
 remove_action( 'genesis_after_header', 'genesis_do_nav' );
 add_action( 'genesis_header', 'genesis_do_nav', 12 );
 
 // Repositions the secondary navigation menu.
 remove_action( 'genesis_after_header', 'genesis_do_subnav' );
-add_action( 'genesis_footer', 'genesis_do_subnav', 10 );
+add_action( 'genesis_footer', 'genesis_do_subnav', 5 );
 
 add_filter( 'wp_nav_menu_args', 'genesis_sample_secondary_menu_args' );
 /**
@@ -170,6 +184,20 @@ function genesis_sample_secondary_menu_args( array $args ): array {
 
 	return $args;
 
+}
+
+add_filter( 'wp_nav_menu_args', 'genesis_sample_flatten_top_menu', 10, 1 );
+/**
+ * @param array $args
+ *
+ * @return array
+ */
+function genesis_sample_flatten_top_menu( array $args ): array {
+	if ( 'top' === $args['theme_location'] ) {
+		$args['depth'] = 1;
+	}
+
+	return $args;
 }
 
 add_filter( 'genesis_author_box_gravatar_size', 'genesis_sample_author_box_gravatar' );
@@ -206,4 +234,26 @@ function genesis_sample_comments_gravatar( array $args ): array {
 
 	return $args;
 
+}
+
+/**
+ * Displays top menu.
+ */
+function genesis_sample_do_top_nav() {
+	// Do nothing if menu not supported.
+	if ( ! genesis_nav_menu_supported( 'top' ) ) {
+		return;
+	}
+
+	$class = 'menu genesis-nav-menu menu-top';
+	if ( genesis_superfish_enabled() ) {
+		$class .= ' js-superfish';
+	}
+
+	genesis_nav_menu(
+		[
+			'theme_location' => 'top',
+			'menu_class'     => $class,
+		]
+	);
 }

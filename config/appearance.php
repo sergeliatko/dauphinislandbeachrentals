@@ -54,7 +54,7 @@ return [
 		],
 		[
 			'name' => __( 'Normal', 'genesis-sample' ),
-			'size' => 18,
+			'size' => 16,
 			'slug' => 'normal',
 		],
 		[
