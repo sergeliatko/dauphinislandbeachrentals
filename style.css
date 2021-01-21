@@ -622,6 +622,23 @@ input[type="submit"]:hover,
 	color: #fff;
 }
 
+.featured-area button:focus,
+.featured-area button:hover,
+.featured-area input[type="button"]:focus,
+.featured-area input[type="button"]:hover,
+.featured-area input[type="reset"]:focus,
+.featured-area input[type="reset"]:hover,
+.featured-area input[type="submit"]:focus,
+.featured-area input[type="submit"]:hover,
+.site-container .featured-area div.wpforms-container-full .wpforms-form input[type="submit"]:focus,
+.site-container .featured-area div.wpforms-container-full .wpforms-form input[type="submit"]:hover,
+.site-container .featured-area div.wpforms-container-full .wpforms-form button[type="submit"]:focus,
+.site-container .featured-area div.wpforms-container-full .wpforms-form button[type="submit"]:hover,
+.featured-area .button:focus,
+.featured-area .button:hover {
+	background-color: #d64627;
+}
+
 .entry-content .button:focus,
 .entry-content .button:hover {
 	color: #fff;
