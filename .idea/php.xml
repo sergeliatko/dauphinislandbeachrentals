@@ -16,6 +16,7 @@
       <path value="$PROJECT_DIR$/vendor/wp-coding-standards/wpcs" />
       <path value="$PROJECT_DIR$/../../../../WordPress/WordPress" />
       <path value="$PROJECT_DIR$/../../../../3rd Party/StudioPress/Genesis/genesis" />
+      <path value="$PROJECT_DIR$/../../../../../../../wamp64/www/dauphinisland/wp-content/plugins/sliderpro" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7" />

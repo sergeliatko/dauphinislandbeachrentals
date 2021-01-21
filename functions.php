@@ -257,3 +257,19 @@ function genesis_sample_do_top_nav() {
 		]
 	);
 }
+
+/**
+ * Hook into Slider Pro Posts query
+ */
+add_filter( 'sliderpro_posts_query_args', function ( array $query ) {
+	if ( empty( $query['meta_query'] ) ) {
+		$query['meta_query'] = array(
+			array(
+				'key'     => '_thumbnail_id',
+				'compare' => 'EXISTS',
+			),
+		);
+	}
+
+	return $query;
+}, 10, 1 );

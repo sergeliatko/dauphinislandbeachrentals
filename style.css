@@ -550,6 +550,10 @@ textarea {
 	width: 100%;
 }
 
+select {
+	padding: 12px;
+}
+
 input:focus,
 textarea:focus {
 	border: 1px solid #999;
@@ -646,6 +650,11 @@ input[type="submit"]:hover,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button {
 	display: none;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+	margin-left: 0.25em;
 }
 
 /* Tables
@@ -749,8 +758,10 @@ th {
 /* Featured area
 --------------------------------------------- */
 .featured-area {
+	background-color: #044460;
+	color: #fff9ea;
 	margin: 0 auto;
-	padding: 0 16px;
+	padding: 6px 16px;
 }
 
 .featured-area-layout-full_width .featured-area {
@@ -759,6 +770,95 @@ th {
 
 .featured-area-layout-full_width .featured-area .wrap {
 	max-width: initial;
+}
+
+.featured-area .widget-title {
+	color: #fff9ea;
+	text-align: center;
+}
+
+/* property search in featured area */
+.featured-area .property-search form {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-content: space-between;
+}
+
+.featured-area .property-search .form-field {
+	flex: 0 1 auto;
+	margin: 0.35em auto;
+	max-width: 48%;
+	width: 48%;
+}
+
+.featured-area .property-search .form-field.form-field-submit {
+	text-align: center;
+	width: 100%;
+	max-width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+	.featured-area .property-search .form-field {
+		max-width: 24%;
+		width: 24%;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.featured-area .property-search form {
+		position: relative;
+		padding-bottom: 2.5em;
+	}
+
+	.featured-area .property-search .form-field,
+	.featured-area .property-search .form-field.form-field-submit {
+		max-width: 19.5%;
+		width: 19.5%;
+	}
+
+	.featured-area .property-search .form-field.form-field-checkbox {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: auto !important;
+	}
+
+	.featured-area .property-search .form-field.form-field-checkbox.form-field-checkbox-pool {
+		right: calc(50% + 1em);
+		left: auto;
+	}
+
+	.featured-area .property-search .form-field.form-field-submit {
+		padding-top: 1.65em;
+	}
+
+	.featured-area .property-search .form-field.form-field-submit input {
+		display: block;
+		width: 100%;
+		padding: 17px;
+	}
+}
+
+/* SLIDER PRO */
+.featured-area .slider-pro h4.sp-layer {
+	font-size: 24px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.sp-layer a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.sp-layer.sp-white {
+	color: #044460;
+}
+
+.sp-layer a:hover,
+.sp-layer a:focus {
+	color: #e84e2a;
 }
 
 /* Wrap
