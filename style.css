@@ -1555,7 +1555,7 @@ figcaption,
 }
 
 .nav-top .menu-top a {
-	font-size: 10px;
+	font-size: 12px;
 	color: #fff9ea;
 }
 
@@ -1573,9 +1573,6 @@ figcaption,
 		text-align: right;
 	}
 
-	.nav-top .menu-top a {
-		font-size: 12px;
-	}
 }
 
 
@@ -1588,7 +1585,6 @@ figcaption,
 }
 
 .nav-secondary .genesis-nav-menu {
-	font-size: 10px;
 	line-height: 1.5;
 	text-align: center;
 	text-transform: uppercase;
@@ -1600,6 +1596,7 @@ figcaption,
 
 .nav-secondary .menu-footer a {
 	color: #fff9ea;
+	font-size: 12px;
 	margin-left: 10px;
 	margin-right: 10px;
 	padding: 0;
