@@ -1575,6 +1575,14 @@ figcaption,
 
 }
 
+@media only screen and (min-width: 680px) {
+
+	.nav-top .menu-top a {
+		font-size: 14px;
+	}
+
+}
+
 
 /* Footer Menu
 --------------------------------------------- */
@@ -1596,7 +1604,7 @@ figcaption,
 
 .nav-secondary .menu-secondary a {
 	color: #fff9ea;
-	font-size: 12px;
+	font-size: 14px;
 	margin-left: 10px;
 	margin-right: 10px;
 	padding: 0;
