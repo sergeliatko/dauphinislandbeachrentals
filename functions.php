@@ -273,3 +273,16 @@ add_filter( 'sliderpro_posts_query_args', function ( array $query ) {
 
 	return $query;
 }, 10, 1 );
+
+/**
+ * Hide archive description on vacation rentals archives when filters are active or is paged
+ */
+add_filter( 'genesis_cpt_archive_intro_text_output', function ( string $text ) {
+	if ( is_post_type_archive( array( 'vacation_rental' ) )
+	     && ( ! empty( $_GET ) || is_paged() )
+	) {
+		return '';
+	}
+
+	return $text;
+}, 10, 1 );
