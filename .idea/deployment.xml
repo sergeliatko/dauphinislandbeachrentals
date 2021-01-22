@@ -178,6 +178,24 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="staging.dauphinislandbeachrentals.com">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/wp-content/themes/dauphinislandbeachrentals" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/.circleci" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.github" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.idea" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.scripts" />
+            <excludedPath local="true" path="$PROJECT_DIR$/node_modules" />
+            <excludedPath local="true" path="$PROJECT_DIR$/vendor" />
+            <excludedPath local="true" path="$PROJECT_DIR$/composer.lock" />
+            <excludedPath local="true" path="$PROJECT_DIR$/style-bk.css" />
+            <excludedPath local="true" path="$PROJECT_DIR$/phpcs.xml.dist" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
       <paths name="staging.dauphinislandbeachrentals.com @TechSpokes">
         <serverdata>
           <mappings>
