@@ -1594,7 +1594,7 @@ figcaption,
 	display: inline-block;
 }
 
-.nav-secondary .menu-footer a {
+.nav-secondary .menu-secondary a {
 	color: #fff9ea;
 	font-size: 12px;
 	margin-left: 10px;
@@ -1602,11 +1602,11 @@ figcaption,
 	padding: 0;
 }
 
-.nav-secondary .menu-footer a:hover,
-.nav-secondary .menu-footer a:focus,
-.nav-secondary .menu-footer .current-menu-item > a,
-.nav-secondary .menu-footer .current-menu-item > a:hover,
-.nav-secondary .menu-footer .current-menu-item > a:hover {
+.nav-secondary .menu-secondary a:hover,
+.nav-secondary .menu-secondary a:focus,
+.nav-secondary .menu-secondary .current-menu-item > a,
+.nav-secondary .menu-secondary .current-menu-item > a:hover,
+.nav-secondary .menu-secondary .current-menu-item > a:hover {
 	color: #FFFFFF;
 }
 
