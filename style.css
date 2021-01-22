@@ -1546,25 +1546,36 @@ figcaption,
 }
 
 .menu-top {
-	font-size: 13px;
-	text-align: right;
+	text-align: center;
 }
 
 .menu-top .menu-item {
 	display: inline-block;
-	padding: 0 15px;
+	padding: 0 0.5em;
 }
 
-.menu-top a {
+.nav-top .menu-top a {
+	font-size: 10px;
 	color: #fff9ea;
 }
 
-.menu-top a:hover,
-.menu-top a:focus,
-.menu-top .current-menu-item > a,
-.menu-top .current-menu-item > a:hover,
-.menu-top .current-menu-item > a:hover {
+.nav-top .menu-top a:hover,
+.nav-top .menu-top a:focus,
+.nav-top .menu-top .current-menu-item > a,
+.nav-top .menu-top .current-menu-item > a:hover,
+.nav-top .menu-top .current-menu-item > a:hover {
 	color: #FFFFFF;
+}
+
+@media only screen and (min-width: 481px) {
+
+	.menu-top {
+		text-align: right;
+	}
+
+	.nav-top .menu-top a {
+		font-size: 12px;
+	}
 }
 
 
@@ -1587,18 +1598,18 @@ figcaption,
 	display: inline-block;
 }
 
-.nav-secondary a {
+.nav-secondary .menu-footer a {
 	color: #fff9ea;
 	margin-left: 10px;
 	margin-right: 10px;
 	padding: 0;
 }
 
-.nav-secondary a:hover,
-.nav-secondary a:focus,
-.nav-secondary .current-menu-item > a,
-.nav-secondary .current-menu-item > a:hover,
-.nav-secondary .current-menu-item > a:hover {
+.nav-secondary .menu-footer a:hover,
+.nav-secondary .menu-footer a:focus,
+.nav-secondary .menu-footer .current-menu-item > a,
+.nav-secondary .menu-footer .current-menu-item > a:hover,
+.nav-secondary .menu-footer .current-menu-item > a:hover {
 	color: #FFFFFF;
 }
 
