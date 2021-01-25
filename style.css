@@ -778,7 +778,7 @@ th {
 	background-color: #044460;
 	color: #fff9ea;
 	margin: 0 auto;
-	padding: 6px 16px;
+	padding: 0 16px;
 }
 
 .featured-area-layout-full_width .featured-area {
@@ -787,6 +787,14 @@ th {
 
 .featured-area-layout-full_width .featured-area .wrap {
 	max-width: initial;
+}
+
+.featured-area .widget:first-child {
+	padding-top: 6px;
+}
+
+.featured-area .widget:last-child {
+	padding-bottom: 6px;
 }
 
 .featured-area .widget-title {
