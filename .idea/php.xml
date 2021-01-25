@@ -18,6 +18,7 @@
       <path value="$PROJECT_DIR$/../../../../3rd Party/StudioPress/Genesis/genesis" />
       <path value="$PROJECT_DIR$/../../../../../../../wamp64/www/dauphinisland/wp-content/plugins/sliderpro" />
       <path value="$PROJECT_DIR$/../../../../../../../wamp64/www/dauphinisland/wp-content/plugins/sl-object-gallery-sliderpro" />
+      <path value="$PROJECT_DIR$/../../../Plugins/Login Links/login-link" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7" />

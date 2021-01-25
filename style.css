@@ -972,6 +972,15 @@ th {
 	overflow: hidden;
 }
 
+.menu-item-has-search-form .search-form {
+	overflow: initial;
+}
+
+.menu-item-has-search-form .search-form input[type="search"] {
+	padding: 6px 6px;
+	line-height: 1.35;
+}
+
 .entry-content .search-form {
 	margin-bottom: 40px;
 	width: 50%;
@@ -982,7 +991,8 @@ th {
 	margin-top: 10px;
 }
 
-.widget_search input[type="submit"] {
+.widget_search input[type="submit"],
+.menu-item-has-search-form input[type="submit"] {
 	border: 0;
 	clip: rect(0, 0, 0, 0);
 	height: 1px;
