@@ -977,8 +977,13 @@ th {
 }
 
 .menu-item-has-search-form .search-form input[type="search"] {
+	font-size: 14px;
 	padding: 6px 6px;
 	line-height: 1.35;
+}
+
+.menu-item-has-search-form .search-form input[type="search"]::placeholder {
+	opacity: 0.65;
 }
 
 .entry-content .search-form {
@@ -1396,7 +1401,7 @@ figcaption,
 .genesis-nav-menu a {
 	color: #124256;
 	display: block;
-	font-size: 15px;
+	font-size: 14px;
 	font-weight: 400;
 	outline-offset: -1px;
 	padding-bottom: 12px;
