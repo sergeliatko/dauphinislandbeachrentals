@@ -2047,6 +2047,10 @@ p.entry-meta {
 		border-left: none;
 	}
 
+	.menu-primary .menu-item-has-search-form {
+		max-width: 180px;
+	}
+
 	/* Content
 	--------------------------------------------- */
 	.content {
