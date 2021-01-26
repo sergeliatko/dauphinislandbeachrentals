@@ -1464,8 +1464,8 @@ figcaption,
 /* Dashicons in menu items
 --------------------------------------------- */
 .dashicons-sailing-boat:before {
-	background: url(images/sailing-boat.svg) no-repeat  top left;
-	background-size: contain;
+	background: url(images/sailing-boat.svg) no-repeat center center;
+	background-size: 120% 120%;
 	display: inline-block;
 	content: '';
 	height: 1em;
