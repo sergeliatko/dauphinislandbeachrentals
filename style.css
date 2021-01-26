@@ -1922,11 +1922,12 @@ p.entry-meta {
 ---------------------------------------------------------------------------- */
 
 .site-footer {
-	background-color: #c8dfeb;
+
+	background: url(images/dibr-logo-monochrome-044460.png) no-repeat scroll center bottom  #c8dfeb;
 	color: #044460;
 	font-size: 15px;
 	line-height: 1.5;
-	padding: 30px;
+	padding: 30px 30px 80px 30px;
 	text-align: center;
 }
 
