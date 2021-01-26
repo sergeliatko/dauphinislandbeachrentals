@@ -2108,7 +2108,7 @@ p.entry-meta {
 	}
 
 	.menu-primary.genesis-nav-menu .menu-item[class*="dashicons"]:before {
-		margin-right: -0.35em;
+		margin: 0 -0.75em 0 0.75em;
 	}
 
 	/* Content
