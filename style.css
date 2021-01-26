@@ -1923,12 +1923,17 @@ p.entry-meta {
 
 .site-footer {
 
-	background: url(images/dibr-logo-monochrome-044460.png) no-repeat scroll center bottom  #c8dfeb;
+	background-color: #c8dfeb;
 	color: #044460;
 	font-size: 15px;
 	line-height: 1.5;
-	padding: 30px 30px 80px 30px;
+	padding: 30px;
 	text-align: center;
+}
+
+.site-footer > .wrap {
+	background: url(images/dibr-logo-monochrome-044460.png) no-repeat scroll center bottom transparent;
+	padding-bottom: 80px;
 }
 
 .site-footer p {
@@ -2003,6 +2008,17 @@ p.entry-meta {
 		align-self: auto;
 		width: 49%;
 		max-width: 49%;
+	}
+
+	.site-footer {
+		text-align: right;
+	}
+
+	.site-footer > .wrap {
+		background-position: right center;
+		padding-bottom: 0;
+		padding-right: 150px;
+		min-height: 68px;
 	}
 }
 
