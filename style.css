@@ -1463,6 +1463,15 @@ figcaption,
 
 /* Dashicons in menu items
 --------------------------------------------- */
+.dashicons-sailing-boat:before {
+	background: url(images/sailing-boat.svg) no-repeat  top left;
+	background-size: contain;
+	display: inline-block;
+	content: '';
+	height: 1em;
+	width: 1em;
+}
+
 .genesis-nav-menu .menu-item[class*="dashicons"] > a {
 	display: inline-block;
 }
