@@ -1933,7 +1933,8 @@ p.entry-meta {
 
 .site-footer > .wrap {
 	background: url(images/dibr-logo-monochrome-044460.png) no-repeat scroll center bottom transparent;
-	padding-bottom: 80px;
+	background-size: 150px 80px;
+	padding-bottom: 96px;
 }
 
 .site-footer p {
@@ -2017,8 +2018,8 @@ p.entry-meta {
 	.site-footer > .wrap {
 		background-position: right center;
 		padding-bottom: 0;
-		padding-right: 150px;
-		min-height: 68px;
+		padding-right: 168px;
+		min-height: 80px;
 	}
 }
 
