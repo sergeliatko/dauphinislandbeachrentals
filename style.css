@@ -448,6 +448,15 @@ h6 a {
 	text-decoration: none;
 }
 
+h1 a:hover, h1 a:focus,
+h2 a:hover, h2 a:focus,
+h3 a:hover, h3 a:focus,
+h4 a:hover, h4 a:focus,
+h5 a:hover, h5 a:focus,
+h6 a:hover, h6 a:focus {
+	color: #e84e2a;
+}
+
 /* Objects
 --------------------------------------------- */
 
