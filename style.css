@@ -187,7 +187,9 @@ button, select {
 }
 
 fieldset {
-	padding: .35em .75em .625em
+	padding: 0 .75em .625em;
+	border: 1px solid #eee;
+	margin: 1em auto;
 }
 
 legend {
@@ -196,7 +198,9 @@ legend {
 	display: table;
 	max-width: 100%;
 	padding: 0;
-	white-space: normal
+	margin: 0 0 1em;
+	white-space: normal;
+	font-size: 1.25em;
 }
 
 progress {
@@ -557,6 +561,16 @@ figure {
 /* Forms
 --------------------------------------------- */
 
+form .description,
+form + .description {
+	font-style: italic;
+	font-size: 0.875em;
+}
+
+.required {
+	color: #d64627;
+}
+
 input,
 select,
 textarea {
@@ -587,17 +601,17 @@ input[type="radio"] {
 
 ::-ms-input-placeholder {
 	color: #044460;
-	opacity: 1;
+	opacity: 0.65;
 }
 
 :-ms-input-placeholder {
 	color: #044460;
-	opacity: 1;
+	opacity: 0.65;
 }
 
 ::placeholder {
 	color: #044460;
-	opacity: 1;
+	opacity: 0.65;
 }
 
 /*noinspection DuplicatedCode*/
@@ -690,7 +704,7 @@ input[type="search"]::-webkit-search-results-button {
 
 input[type="checkbox"] + label,
 input[type="radio"] + label {
-	margin-left: 0.25em;
+	margin-left: 0.5em;
 }
 
 /* Tables
