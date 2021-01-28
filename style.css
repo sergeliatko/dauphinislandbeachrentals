@@ -1577,13 +1577,15 @@ figcaption,
 }
 
 .menu-toggle {
+	display: block;
 	float: right;
-	font-size: 15px;
+	font-size: 20px;
 	font-weight: 300;
 	line-height: 1;
 	padding: 25px 0;
 	position: relative;
 	z-index: 1000;
+	white-space: nowrap;
 }
 
 .menu-toggle.activated::before {
@@ -1997,10 +1999,6 @@ p.entry-meta {
 	}
 
 	.site-title {
-		font-size: 20px;
-	}
-
-	.menu-toggle {
 		font-size: 20px;
 	}
 
