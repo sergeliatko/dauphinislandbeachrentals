@@ -1747,7 +1747,7 @@ figcaption,
 --------------------------------------------- */
 
 .entry {
-	margin-bottom: 40px;
+	margin-bottom: 60px;
 }
 
 .entry-content ol,
@@ -2044,8 +2044,8 @@ p.entry-meta {
 	.full-width-content.multi-post .content > .entry {
 		flex: 0 1 auto;
 		align-self: auto;
-		width: 49%;
-		max-width: 49%;
+		width: 47%;
+		max-width: 47%;
 	}
 
 	.site-footer {
