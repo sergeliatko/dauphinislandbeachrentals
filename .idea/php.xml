@@ -19,6 +19,7 @@
       <path value="$PROJECT_DIR$/../../../../../../../wamp64/www/dauphinisland/wp-content/plugins/sliderpro" />
       <path value="$PROJECT_DIR$/../../../../../../../wamp64/www/dauphinisland/wp-content/plugins/sl-object-gallery-sliderpro" />
       <path value="$PROJECT_DIR$/../../../Plugins/Login Links/login-link" />
+      <path value="$PROJECT_DIR$/../../../../../../../wamp64/www/dauphinisland/wp-content/plugins/shareaholic" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7" />

@@ -1003,14 +1003,13 @@ table.vertical-table {
 }
 
 .breadcrumb {
-	border-bottom: 1px solid #eee;
 	font-size: 16px;
 	margin-bottom: 40px;
-	padding-bottom: 10px;
+	text-align: center;
 }
 
-.genesis-title-hidden .breadcrumb {
-	margin-top: 40px;
+.breadcrumb a {
+	text-decoration: none;
 }
 
 .archive-description p:last-child,

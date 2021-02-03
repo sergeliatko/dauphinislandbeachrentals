@@ -37,9 +37,7 @@ add_action( 'after_setup_theme', 'genesis_sample_localization_setup' );
  * @since 1.0.0
  */
 function genesis_sample_localization_setup() {
-
 	load_child_theme_textdomain( genesis_get_theme_handle(), get_stylesheet_directory() . '/languages' );
-
 }
 
 // Adds helper functions.
@@ -155,6 +153,10 @@ unregister_sidebar( 'sidebar-alt' );
 genesis_unregister_layout( 'content-sidebar-sidebar' );
 genesis_unregister_layout( 'sidebar-content-sidebar' );
 genesis_unregister_layout( 'sidebar-sidebar-content' );
+
+// Reposition breadcrumbs
+remove_action( 'genesis_before_loop', 'genesis_do_breadcrumbs' );
+add_action( 'genesis_after_loop', 'genesis_do_breadcrumbs', 10, 0 );
 
 // Add top menu
 add_action( 'genesis_before_header', 'genesis_sample_do_top_nav', 10, 0 );
@@ -278,8 +280,9 @@ add_filter( 'sliderpro_posts_query_args', function ( array $query ) {
  * Hide archive description on vacation rentals archives when filters are active or is paged
  */
 add_filter( 'genesis_cpt_archive_intro_text_output', function ( string $text ) {
-	if ( is_post_type_archive( array( 'vacation_rental' ) )
-	     && ( ! empty( $_GET ) || is_paged() )
+	if (
+		is_post_type_archive( array( 'vacation_rental' ) )
+		&& ( ! empty( $_GET ) || is_paged() )
 	) {
 		return '';
 	}
