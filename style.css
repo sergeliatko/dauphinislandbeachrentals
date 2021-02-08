@@ -742,25 +742,11 @@ th {
 	padding: 0.5em;
 }
 
-/* vertical tables */
-
-table.vertical-table {
-	border-bottom: 1px solid #eee;
+/* vertical table */
+table.vertical-table th {
+	width: 63%;
+	word-break: break-word;
 }
-
-.vertical-table tbody {
-	border-bottom: 0;
-}
-
-.vertical-table tr {
-	border-top: 0;
-}
-
-.vertical-table th,
-.vertical-table td {
-	border-top: 1px solid #eee;
-}
-
 
 /* Screen Reader Text
 --------------------------------------------- */
