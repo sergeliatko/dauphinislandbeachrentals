@@ -1635,8 +1635,8 @@ figcaption,
 
 .nav-primary {
 	clear: left;
-	padding-bottom: 15px;
-	padding-top: 15px;
+	padding-bottom: 12px;
+	padding-top: 12px;
 	width: 100%;
 }
 
@@ -2271,7 +2271,7 @@ p.entry-meta {
 	--------------------------------------------- */
 	.genesis-responsive-menu {
 		display: block;
-		padding-top: 15px;
+		padding-top: 12px;
 	}
 
 	.menu-toggle,
