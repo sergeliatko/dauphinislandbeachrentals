@@ -289,3 +289,12 @@ add_filter( 'genesis_cpt_archive_intro_text_output', function ( string $text ) {
 
 	return $text;
 }, 10, 1 );
+
+/**
+ * Hide website url field in comments across the website.
+ */
+add_filter( 'comment_form_default_fields', function ( array $fields ) {
+	unset( $fields['url'] );
+
+	return $fields;
+}, 10, 1 );
