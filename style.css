@@ -1895,9 +1895,9 @@ p.entry-meta {
 }
 
 .comment-author {
-	color: #E84E2A;
-	font-size: 1.125rem;
-	font-weight: bold;
+	font-family: "Cinzel", serif;
+    font-variant: small-caps;
+	font-size: 1.25rem;
 }
 
 .comment-author-link {
@@ -1937,9 +1937,10 @@ p.entry-meta {
 }
 
 .comment-reply {
-	font-size: 0.75em;
+	font-size: 0.875em;
 	text-align: right;
 	text-transform: uppercase;
+	margin-top: -20px;
 }
 
 .comment-reply a {
@@ -1954,6 +1955,24 @@ p.entry-meta {
 .comment-form-cookies-consent label {
 	display: inline;
 	padding-left: 10px;
+}
+
+.comment-reply-title {
+	position: relative;
+}
+
+.comment-reply-title small {
+	position: absolute;
+	top: 0.5em;
+	right: 0;
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.comment-notes {
+	font-size: 0.875em;
+	font-style: italic;
 }
 
 /* Sidebar
