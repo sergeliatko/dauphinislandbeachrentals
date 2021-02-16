@@ -296,5 +296,13 @@ add_filter( 'genesis_cpt_archive_intro_text_output', function ( string $text ) {
 add_filter( 'comment_form_default_fields', function ( array $fields ) {
 	unset( $fields['url'] );
 
+	if ( isset( $fields['cookies'] ) ) {
+		$fields['cookies'] = str_replace(
+			__( 'Save my name, email, and website in this browser for the next time I comment.' ),
+			__( 'Save my name and email in this browser for the next time I comment.', 'dauphinislandbeachrentals' ),
+			$fields['cookies']
+		);
+	}
+
 	return $fields;
 }, 10, 1 );
