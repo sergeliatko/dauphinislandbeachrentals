@@ -1870,16 +1870,28 @@ p.entry-meta {
 	margin-bottom: 40px;
 }
 
-.comment-list li {
-	padding: 40px 0 0 30px;
+.comment-list {
+    clear: both;
+    list-style: none;
+    margin: 30px auto;
 }
 
-.comment-list .depth-1 {
-	padding-left: 0;
+.comment-list li > ul.children {
+	margin-left: 16px;
 }
 
 .comment-header {
-	margin-bottom: 30px;
+	margin-bottom: 16px;
+}
+
+.comment-meta {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+.comment-meta a {
+	color: inherit;
+	text-decoration: none;
 }
 
 .comment-content {
@@ -1888,12 +1900,6 @@ p.entry-meta {
 
 .comment-content ul > li {
 	list-style-type: disc;
-}
-
-.comment-respond input[type="email"],
-.comment-respond input[type="text"],
-.comment-respond input[type="url"] {
-	width: 50%;
 }
 
 .comment-respond label {
