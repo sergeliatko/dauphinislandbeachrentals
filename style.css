@@ -1892,6 +1892,17 @@ p.entry-meta {
 
 .comment-header {
 	margin-bottom: 16px;
+	position: relative;
+}
+
+.comment-edit-link {
+	position: absolute;
+	top: 0.25em;
+	right: 0;
+	text-decoration: none;
+	color: inherit;
+	text-transform: uppercase;
+	font-size: 0.75em;
 }
 
 .comment-author {
