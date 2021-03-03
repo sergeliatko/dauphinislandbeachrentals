@@ -28,7 +28,7 @@ $genesis_sample_link_color_brightness = genesis_sample_color_brightness( $genesi
 
 return [
 	'fonts-url'            => 'https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap',
-	'content-width'        => 1062,
+	'content-width'        => 640,
 	'button-bg'            => $genesis_sample_link_color,
 	'button-color'         => $genesis_sample_link_color_contrast,
 	'button-outline-hover' => $genesis_sample_link_color_brightness,

@@ -26,10 +26,10 @@ return [
 		'content_archive_thumbnail' => 0,
 		'entry_meta_after_content'  => '[post_categories] [post_tags]',
 		'entry_meta_before_content' => '[post_date] ' . __( 'by', 'genesis-sample' ) . ' [post_author_posts_link] [post_comments] [post_edit]',
-		'image_size'                => 'genesis-singular-images',
+		'image_size'                => 'medium_large',
 		'image_alignment'           => 'aligncenter',
 		'posts_nav'                 => 'numeric',
 		'site_layout'               => 'content-sidebar',
 	],
-	'posts_per_page'       => 6,
+	'posts_per_page'       => 12,
 ];

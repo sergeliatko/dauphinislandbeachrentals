@@ -139,10 +139,6 @@ function genesis_sample_post_type_support() {
 
 }
 
-// Adds image sizes.
-add_image_size( 'sidebar-featured', 100, 56, true );
-add_image_size( 'genesis-singular-images', 640, 360, true );
-
 // Removes header right widget area.
 unregister_sidebar( 'header-right' );
 
