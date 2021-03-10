@@ -917,7 +917,7 @@ table.vertical-table th {
 
 /* SLIDER PRO */
 .featured-area .slider-pro h4.sp-layer {
-	font-size: 24px;
+	font-size: 13px;
 	text-transform: uppercase;
 	text-align: center;
 }
@@ -934,6 +934,18 @@ table.vertical-table th {
 .sp-layer a:hover,
 .sp-layer a:focus {
 	color: #e84e2a;
+}
+
+@media all and (min-width: 600px) {
+	.featured-area .slider-pro h4.sp-layer {
+		font-size: 18px;
+	}
+}
+
+@media all and (min-width: 1280px) {
+	.featured-area .slider-pro h4.sp-layer {
+		font-size: 24px;
+	}
 }
 
 /* Wrap
