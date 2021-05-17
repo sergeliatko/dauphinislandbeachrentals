@@ -594,10 +594,6 @@ textarea {
 	width: 100%;
 }
 
-select {
-	padding: 13px;
-}
-
 input:focus,
 textarea:focus {
 	border: 1px solid #999;
