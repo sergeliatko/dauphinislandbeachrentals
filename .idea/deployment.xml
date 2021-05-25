@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="WordPress Theme Demo" uploadOnCheckinGroup="WordPress Theme Demo" remoteFilesAllowedToDisappearOnAutoupload="false" autoUploadExternalChanges="true">
+  <component name="PublishConfigData" autoUpload="Always" serverName="WordPress Theme Demo" uploadOnCheckin="cfc2fffd-cbfa-4c5a-9947-10240482d235" remoteFilesAllowedToDisappearOnAutoupload="false" autoUploadExternalChanges="true">
     <serverData>
       <paths name="BeatOfHawaii .Local">
         <serverdata>
@@ -102,6 +102,20 @@
         </serverdata>
       </paths>
       <paths name="dauphinislandbeachrentals.loc">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="electricien-bayonne.fr @IONOS">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="electricien-bayonne.loc">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
@@ -224,6 +238,13 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="techspokes.loc">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="test.loc">
         <serverdata>
           <mappings>
@@ -279,6 +300,7 @@
         </serverdata>
       </paths>
     </serverData>
+    <option name="myUploadOnCheckinName" value="dauphinislandbeachrentals.com @TechSpokes" />
     <option name="myAutoUpload" value="ALWAYS" />
   </component>
 </project>

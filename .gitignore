@@ -3,6 +3,7 @@
 /phpcs.xml
 node_modules/
 vendor/
+/.idea/
 
 # Artifacts
 process.yml
